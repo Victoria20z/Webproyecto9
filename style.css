@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra superior */
+.barra-superior {
+    background-color: #343a40;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Tarjetas de recetas */
+.receta-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.receta-card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #495057;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.boton-favorito {
+    border-radius: 5px;
+}
+
+.boton-favorito i {
+    margin-right: 8px;
+}
+
+/* Estilos para los botones */
+.btn-warning {
+    background-color: #fbd298;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger i {
+    margin-right: 8px;
+}
+
+.btn-warning:hover, .btn-outline-danger:hover {
+    opacity: 0.8;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Estilos de los comentarios */
+.comentarios {
+    background-color: #f1f3f5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.comentarios h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #495057;
+}
+
+.busqueda input {
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+/* Estilos para el menú lateral */
+.offcanvas-header {
+    background-color: #343a40;
+    color: white;
+}
+
+.offcanvas-body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.offcanvas-body a {
+    display: block;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offcanvas-body a:hover {
+    color: #007bff;
+}
+
+/* Modal de configuración */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: white;
+}
+
+.modal-body {
+    background-color: #f8f9fa;
+}
+
+.modal-body button {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .receta-card {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+}

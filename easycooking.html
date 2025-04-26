@@ -1,38 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>EasyCooking</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>EasyCooking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="contenedor">
-        
-        <div class="encabezado">
-            <span class="menu-icon">☰</span>
-            <h1>easycooking</h1>
-            <span class="settings-icon">⚙️</span>
-        </div>
-        
-        <div class="barra">
-            <input type="text" placeholder="🔍︎ Buscar">
-        </div>
+<body class="bg-light">
 
-        <div class="recetas">
-            <div class="receta">
-                <img src="pasta_atun.jpg" alt="Pasta con atún y jitomate">
-                <p>Pasta con atún y jitomate</p>
-            </div>
+  <div class="contenedor py-4 text-center">
 
-            <div class="receta">
-                <img src="tortilla_papa.jpeg" alt="Tortilla de papa">
-                <p>Tortilla de papa</p>
-            </div>
+    <!-- Encabezado -->
+    <div class="barra-superior d-flex justify-content-between align-items-center mb-4 px-3">
+      <!-- Botón menú -->
+      <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+        <i class="bi bi-list fs-2"></i>
+      </button>
 
-            <div class="receta">
-                <img src="sandwich_huevo.jpg" alt="Sandwich de huevo y queso derretido">
-                <p>Sandwich de huevo y queso derretido</p>
-            </div>
-        </div>
+      <h1 class="fw-bold text-dark">easycooking</h1>
+
+      <!-- Botón configuración -->
+      <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalConfiguracion">
+        <i class="bi bi-gear-fill fs-2"></i>
+      </button>
     </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="busqueda shadow-sm mx-auto mb-5" style="max-width: 500px;">
+      <input type="text" class="form-control border-0" placeholder="🔍︎ Buscar receta...">
+    </div>
+
+    <!-- Tarjetas de recetas -->
+    <div class="row justify-content-center g-4">
+      <!-- Receta 1 -->
+      <div class="col-md-4">
+        <div class="card receta-card h-100 shadow-sm">
+          <img src="pasta_atun.jpg" class="card-img-top" alt="Pasta con atún y jitomate">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pasta con atún y jitomate</h5>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100 mb-2">
+                <i class="bi bi-book"></i> Ver receta
+              </a>
+              <button class="btn btn-outline-danger w-100 boton-favorito">
+                <i class="bi bi-heart"></i> Agregar a favoritos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Receta 2 -->
+      <div class="col-md-4">
+        <div class="card receta-card h-100 shadow-sm">
+          <img src="tortilla_papa.jpeg" class="card-img-top" alt="Tortilla de papa">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tortilla de papa</h5>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100 mb-2">
+                <i class="bi bi-book"></i> Ver receta
+              </a>
+              <button class="btn btn-outline-danger w-100 boton-favorito">
+                <i class="bi bi-heart"></i> Agregar a favoritos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Receta 3 -->
+      <div class="col-md-4">
+        <div class="card receta-card h-100 shadow-sm">
+          <img src="sandwich_huevo.jpg" class="card-img-top" alt="Sandwich de huevo y queso derretido">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Sandwich de huevo y queso derretido</h5>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100 mb-2">
+                <i class="bi bi-book"></i> Ver receta
+              </a>
+              <button class="btn btn-outline-danger w-100 boton-favorito">
+                <i class="bi bi-heart"></i> Agregar a favoritos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas Menú Lateral -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="#" class="btn btn-outline-primary w-100 mb-2">Inicio</a></li>
+        <li><a href="#" class="btn btn-outline-primary w-100 mb-2">Mis Recetas</a></li>
+        <li><a href="#" class="btn btn-outline-primary w-100">Favoritos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal de Configuración -->
+  <div class="modal fade" id="modalConfiguracion" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Configuración</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Próximamente podrás cambiar el tema, idioma y más.</p>
+          <button class="btn btn-outline-secondary w-100 mb-2">Cambiar tema</button>
+          <button class="btn btn-outline-secondary w-100">Idioma</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para botones de favoritos -->
+  <script>
+    document.querySelectorAll(".boton-favorito").forEach(boton => {
+      boton.addEventListener("click", () => {
+        const icono = boton.querySelector("i");
+        boton.classList.toggle("btn-danger");
+        boton.classList.toggle("btn-outline-danger");
+        icono.classList.toggle("bi-heart");
+        icono.classList.toggle("bi-heart-fill");
+      });
+    });
+  </script>
 </body>
 </html>
