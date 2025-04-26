@@ -1,33 +1,31 @@
 body {
     background-image: url('iconos.jpg');
     background-size: cover;
-    
     background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    }
-    
-    .contenedor {
+}
+
+.contenedor {
     width: 90%;
     margin: auto;
     padding-top: 30px;
-    }
-    
-    .encabezado {
+}
+
+.encabezado {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 -50px;
-    }
-    
-    .barra {
+}
+
+.barra {
     display: flex;
     justify-content: center;
-    
     background-color: white;
     border-radius: 30px;
     padding: 15px 20px;
@@ -36,25 +34,25 @@ body {
     margin-top: 50px;
     align-items: center;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-    }
-    
-    .barra input {
+}
+
+.barra input {
     border: none;
     outline: none;
     width: 100%;
     padding: 10px;
     font-size: 18px;
-    }
-    
-    .recetas {
+}
+
+.recetas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-content: center;
     margin-top: 40px;
-    }
-    
-    .receta {
+}
+
+.receta {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -63,22 +61,22 @@ body {
     text-align: center;
     margin: auto;
     margin-top: 100px;
-    }
-    
-    .receta img {
+}
+
+.receta img {
     width: 100%;
     height: auto;
     border-radius: 15px;
     margin-bottom: 15px;
-    }
-    
-    .receta p {
+}
+
+.receta p {
     font-size: 20px;
     color: #333;
     margin: 0;
-    }
-    
-    .posicion {
+}
+
+.posicion {
     width: 100%;
     height: 220px;
     background-color: lightgray;
@@ -86,4 +84,4 @@ body {
     margin-bottom: 15px;
     display: block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
+}
