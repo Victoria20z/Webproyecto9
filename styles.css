@@ -2,78 +2,89 @@
 body {
     background-color: #fdfcfb;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Encabezado */
-  .barra-superior {
-    background-color: #ffc107;
+}
+
+/* Encabezado */
+.barra-superior {
+    background-color: #f1e5b7; /* Amarillo pastel más suave */
     border-radius: 12px;
     padding: 0.75rem 1rem;
-  }
-  
-  /* Título */
-  h1 {
+}
+
+/* Título */
+h1 {
     margin: 0;
     font-size: 1.8rem;
     color: #343a40;
-  }
-  
-  /* Botón icono */
-  .barra-superior .btn {
+}
+
+/* Botón icono */
+.barra-superior .btn {
     background: transparent;
     border: none;
     color: #343a40;
-  }
-  
-  /* Búsqueda */
-  .busqueda input {
+}
+
+/* Búsqueda */
+.busqueda input {
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
     background-color: #fff;
-  }
-  
-  /* Tarjetas de recetas */
-  .receta-card {
+    border: 1px solid #ddd; /* Agregué un borde suave */
+}
+
+/* Tarjetas de recetas */
+.receta-card {
     border: none;
     border-radius: 16px;
     overflow: hidden;
     transition: transform 0.3s ease;
-  }
-  
-  .receta-card:hover {
+}
+
+.receta-card:hover {
     transform: scale(1.02);
-  }
-  
-  .receta-card img {
+}
+
+.receta-card img {
     height: 200px;
     object-fit: cover;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 1.1rem;
     font-weight: bold;
-  }
-  
-  /* Botones dentro de tarjetas */
-  .receta-card .btn {
+}
+
+/* Botones dentro de tarjetas */
+.receta-card .btn {
     border-radius: 8px;
     font-size: 0.95rem;
-  }
-  
-  /* Offcanvas */
-  .offcanvas-title {
+    background-color: #f1e5b7; /* Amarillo pastel más suave */
+    color: #343a40;
+    border: none;
+}
+
+.receta-card .btn:hover {
+    background-color: #f1d08a; /* Amarillo un poco más oscuro para el hover */
+}
+
+/* Offcanvas */
+.offcanvas-title {
     font-weight: bold;
-  }
-  
-  /* Modal */
-  .modal-title {
+}
+
+/* Modal */
+.modal-title {
     font-weight: bold;
-  }
-  
-  /* Animaciones suaves */
-  .btn,
-  input {
+}
+
+/* Animaciones suaves */
+.btn,
+input {
     transition: all 0.2s ease-in-out;
-  }
-  
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
