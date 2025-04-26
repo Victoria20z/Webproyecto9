@@ -1,40 +1,34 @@
-/* Fondo general */
 body {
     background-color: #fdfcfb;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Encabezado */
 .barra-superior {
-    background-color: #f1e5b7; /* Amarillo pastel más suave */
+    background-color: #f1e5b7;
     border-radius: 12px;
     padding: 0.75rem 1rem;
 }
 
-/* Título */
 h1 {
     margin: 0;
     font-size: 1.8rem;
     color: #343a40;
 }
 
-/* Botón icono */
 .barra-superior .btn {
     background: transparent;
     border: none;
     color: #343a40;
 }
 
-/* Búsqueda */
 .busqueda input {
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
     background-color: #fff;
-    border: 1px solid #ddd; /* Agregué un borde suave */
+    border: 1px solid #ddd;
 }
 
-/* Tarjetas de recetas */
 .receta-card {
     border: none;
     border-radius: 16px;
@@ -56,30 +50,26 @@ h1 {
     font-weight: bold;
 }
 
-/* Botones dentro de tarjetas */
 .receta-card .btn {
     border-radius: 8px;
     font-size: 0.95rem;
-    background-color: #f1e5b7; /* Amarillo pastel más suave */
+    background-color: #f1e5b7; 
     color: #343a40;
     border: none;
 }
 
 .receta-card .btn:hover {
-    background-color: #f1d08a; /* Amarillo un poco más oscuro para el hover */
+    background-color: #f1d08a; 
 }
 
-/* Offcanvas */
 .offcanvas-title {
     font-weight: bold;
 }
 
-/* Modal */
 .modal-title {
     font-weight: bold;
 }
 
-/* Animaciones suaves */
 .btn,
 input {
     transition: all 0.2s ease-in-out;

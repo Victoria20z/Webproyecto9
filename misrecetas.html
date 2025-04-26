@@ -5,37 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyCooking</title>
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-light">
 
     <div class="contenedor py-4 text-center">
 
-        <!-- Encabezado -->
         <div class="barra-superior d-flex justify-content-between align-items-center mb-4 px-3">
-            <!-- Botón menú -->
             <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
                 <i class="bi bi-list fs-2"></i>
             </button>
 
             <h1 class="fw-bold text-dark">easycooking</h1>
 
-            <!-- Botón configuración -->
             <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalConfiguracion">
                 <i class="bi bi-gear-fill fs-2"></i>
             </button>
         </div>
 
-        <!-- Tarjetas de recetas -->
         <div class="row justify-content-center g-4">
-            <!-- Receta 1 -->
             <div class="col-md-4">
                 <div class="card receta-card h-100 shadow-sm">
                     <img src="pasta_atun.jpg" class="card-img-top" alt="Pasta con atún y jitomate">
@@ -49,7 +41,6 @@
                                 <i class="bi bi-heart"></i> Agregar a favoritos
                             </button>
 
-                            <!-- Comentarios dentro de la tarjeta -->
                             <div class="comentarios mt-3">
                                 <h6>Comentarios</h6>
                                 <div class="busqueda shadow-sm">
@@ -61,7 +52,6 @@
                 </div>
             </div>
 
-            <!-- Receta 2 -->
             <div class="col-md-4">
                 <div class="card receta-card h-100 shadow-sm">
                     <img src="tortilla_papa.jpeg" class="card-img-top" alt="Tortilla de papa">
@@ -75,7 +65,6 @@
                                 <i class="bi bi-heart"></i> Agregar a favoritos
                             </button>
 
-                            <!-- Comentarios dentro de la tarjeta -->
                             <div class="comentarios mt-3">
                                 <h6>Comentarios</h6>
                                 <div class="busqueda shadow-sm">
@@ -87,7 +76,6 @@
                 </div>
             </div>
 
-            <!-- Receta 3 -->
             <div class="col-md-4">
                 <div class="card receta-card h-100 shadow-sm">
                     <img src="sandwich_huevo.jpg" class="card-img-top" alt="Sándwich de huevo y queso derretido">
@@ -101,7 +89,6 @@
                                 <i class="bi bi-heart"></i> Agregar a favoritos
                             </button>
 
-                            <!-- Comentarios dentro de la tarjeta -->
                             <div class="comentarios mt-3">
                                 <h6>Comentarios</h6>
                                 <div class="busqueda shadow-sm">
@@ -115,7 +102,6 @@
         </div>
     </div>
 
-    <!-- Offcanvas Menú Lateral -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title">Menú</h5>
@@ -123,14 +109,13 @@
         </div>
         <div class="offcanvas-body">
             <ul class="list-unstyled">
-                <li><a href="index.html" class="btn btn-outline-primary w-100 mb-2">Inicio</a></li>
+                <li><a href="easycooking.html" class="btn btn-outline-primary w-100 mb-2">Inicio</a></li>
                 <li><a href="#" class="btn btn-outline-primary w-100 mb-2">Mis Recetas</a></li>
                 <li><a href="#" class="btn btn-outline-primary w-100">Favoritos</a></li>
             </ul>
         </div>
     </div>
 
-    <!-- Modal de Configuración -->
     <div class="modal fade" id="modalConfiguracion" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -147,7 +132,6 @@
         </div>
     </div>
 
-    <!-- Script para botones de favoritos -->
     <script>
         document.querySelectorAll(".boton-favorito").forEach(boton => {
             boton.addEventListener("click", () => {
@@ -160,7 +144,6 @@
         });
     </script>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

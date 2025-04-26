@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -6,14 +5,12 @@ body {
     padding: 0;
 }
 
-/* Contenedor principal */
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Barra superior */
 .barra-superior {
     background-color: #343a40;
     padding: 15px;
@@ -21,13 +18,11 @@ body {
     border-radius: 8px;
 }
 
-/* Título */
 h1 {
     font-size: 2rem;
     font-weight: bold;
 }
 
-/* Tarjetas de recetas */
 .receta-card {
     border-radius: 10px;
     overflow: hidden;
@@ -64,7 +59,6 @@ h1 {
     margin-right: 8px;
 }
 
-/* Estilos para los botones */
 .btn-warning {
     background-color: #fbd298;
     color: white;
@@ -90,7 +84,6 @@ h1 {
     width: 100%;
 }
 
-/* Estilos de los comentarios */
 .comentarios {
     background-color: #f1f3f5;
     padding: 10px;
@@ -112,7 +105,6 @@ h1 {
     font-size: 0.875rem;
 }
 
-/* Estilos para el menú lateral */
 .offcanvas-header {
     background-color: #343a40;
     color: white;
@@ -135,7 +127,6 @@ h1 {
     color: #007bff;
 }
 
-/* Modal de configuración */
 .modal-content {
     border-radius: 8px;
 }
@@ -154,7 +145,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Ajustes de responsividad */
 @media (max-width: 768px) {
     .receta-card {
         margin-bottom: 20px;
